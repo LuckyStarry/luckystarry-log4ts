@@ -1,6 +1,6 @@
 export interface Logger {
-  Debug(message: string): void
-  Info(message: string): void
-  Warning(message: string): void
-  Error(message: string): void
+  Debug(message: string, extra?: { [key: string]: any }): void
+  Info(message: string, extra?: { [key: string]: any }): void
+  Warning(message: string, extra?: { [key: string]: any }): void
+  Error(message: string, extra?: { [key: string]: any }): void
 }
